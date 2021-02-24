@@ -8,6 +8,8 @@ const QuestionSchema = mongoose.Schema({
 	constraints: { type: String, required: true },
 	sample_input: { type: String, required: true },
 	sample_output: { type: String, required: true },
+	difficulty: { type: String, required: true },
+	submissions: { type: Number },
 });
 
 module.exports = mongoose.model("Questions", QuestionSchema);

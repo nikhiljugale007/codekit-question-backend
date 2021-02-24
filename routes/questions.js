@@ -36,6 +36,8 @@ router.post("/", async (req, res) => {
 		constraints: req.body.constraints,
 		sample_input: req.body.sample_input,
 		sample_output: req.body.sample_output,
+		difficulty: req.body.difficulty,
+		submissions: req.body.submissions,
 	});
 
 	try {
