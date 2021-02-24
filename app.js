@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/api/courses", routeCourses);
 
 app.get("/", (req, res) => {
-	res.send("Hello World !!");
+	res.send("Testing api #code-kit !!");
 });
 
 const url =
