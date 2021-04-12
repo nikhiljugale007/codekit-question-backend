@@ -8,12 +8,14 @@ app.use(express.json());
 
 const routeCourses = require("./routes/courses.js");
 const routeQuestions = require("./routes/questions.js");
+const routeCareer = require("./routes/careers.js");
 
 const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use("/api/courses", routeCourses);
 app.use("/api/questions", routeQuestions);
+app.use("/api/careers", routeCareer);
 
 app.get("/", (req, res) => {
 	res.send("Testing api #code-kit !!");
