@@ -7,8 +7,10 @@ const Question = require("../models/Question");
 router.get("/", async (req, res) => {
 	try {
 		const questions = await Question.find();
+		console.log("DB");
 		res.status(200).json(questions);
 	} catch (err) {
+		console.log("ERR");
 		res.status(500).json({ message: err });
 	}
 });

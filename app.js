@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 const url =
-	"mongodb+srv://nikhiljugale007:PIIoZYdKF9k5PaPY@cluster0.jytgl.mongodb.net/question?retryWrites=true&w=majority";
+	"mongodb+srv://nikhiljugale007:BajazsBggxiWXF04@cluster0.jytgl.mongodb.net/question?retryWrites=true&w=majority";
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, () =>
 	console.log("Connected to database")
@@ -33,3 +33,5 @@ app.listen(port, () => {
 });
 
 //mongodb+srv://nikhiljugale007:<password>@cluster0.jytgl.mongodb.net/<dbname>?retryWrites=true&w=majority
+//	"mongodb+srv://nikhiljugale007:BajazsBggxiWXF04@cluster0.jytgl.mongodb.net/question?retryWrites=true&w=majority";
+//mongodb+srv://nikhiljugale007:BajazsBggxiWXF04@cluster0.jytgl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
